@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Noto+Sans+JP:wght@600&family=Quicksand:wght@300&display=swap');
+
+@import url("https://www.svgrepo.com/svg/321546/sword-in-stone" );
+
+:root {
+    --primary-color: #AEDDEF;
+}
+
+body::-webkit-scrollbar{
+    width: 0.75em;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: #AEDDEF;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #00b7ffcb;
+    border-radius: 50em;
+    border: 2px solid #AEDDEF;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #15536bd3;
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    background-size: cover;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: auto;
+    width: 100%;
+    z-index: 3;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+}
+
+.navbar ul li a span{
+    transition: 200ms;
+}
+
+
+
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 1.3em;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #fff;
+    transition: 100ms;
+}
+
+.mainnn a span{
+    color: #0037ff8e;
+}
+
+.navbar ul li a:focus-within,
+.navbar ul li a span:hover {
+    color: #00b8ff;
+}
+
+.navbar ul li a img {
+    width: 3em;
+    transition: 100ms;
+    filter: invert(100%) sepia(0%) saturate(27%) hue-rotate(70deg) brightness(108%) contrast(106%);
+}
+
+.navbar ul .logo a img:hover {
+    filter: invert(79%) sepia(56%) saturate(6556%) hue-rotate(162deg) brightness(99%) contrast(104%)
+}
+
+/*a parti daqui tudo é o slide*/
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  top: 100px;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  position: relative;
+  top: 100px;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #B3E7F2;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #27CDF2;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.main {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em 0;
+    margin-top: 20%;
+}
+
+.main_div  {
+    padding: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+.main_div h1 {
+    font-family: 'Castoro Titling', cursive;
+    font-size: 2.3em;
+}
+
+.main_div p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.3em;
+    padding: 1em;
+    position: relative;
+}
+
+.main_div a {
+    font-family: 'Quicksand', sans-serif;
+    border: 2px solid #00b7ff37;
+    background-color: #00b7ff37;
+    border-radius: 5%;
+    padding: 5px;
+    font-size: 1em;
+    text-decoration: none;
+    transition:transform 200ms;
+}
+
+.main_div a:hover,
+.main_div a:focus-within {
+    transform: scale(1.2);
+}
+
+.main_img {
+    width: 100%;
+}
+
+body:not(main) {
+    display: grid;
+
+}
+
+.bottom {
+    position: absolute;
+    top: 42rem;
+    left: 0;
+    background: #00b8ff;
+    background-size: cover;
+    width: 300vw;
+    height: 47vh;
+    
+}
+
+.bottom_text {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    position: sticky;
+    top: 90%;
+}
+
+.profile_div {
+    border-radius: 20px;
+    background-color: #d8f0f5;
+    width: 55%;
+    margin: auto;
+    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.profile_div img{
+    width: 300px;
+    aspect-ratio: 1 / 1;
+    border-radius: 11em;
+    border: 4px solid #00b8ff;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2em;
+    margin-left: 5%;
+}
+
+h3{
+    color: #2f2f2f;
+    font-size: large;
+    margin-left: 10%;
+    margin-top: 10%;
+    font-size: 3rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h5 {
+    color: #2f2f2f;
+    font-size: 3rem;
+}
+
+.info_p {
+    color: #2f2f2f;
+    font-size: 1.75rem;
+}
